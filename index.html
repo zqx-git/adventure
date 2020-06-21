@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>角色扮演游戏</title>   
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>时光倒流奇遇记</title>   
 </head>
 <body>
-    
+    <!-- 第一屏：介绍游戏，提示输入角色信息 -->
+    <section class="play-page page-start" id="pageStart">
+        <div class="play-page-content">
+            <h3 class="page-start-title">时光倒流的奇遇</h3>
+            <!-- 打字机效果 -->
+            <p class="page-start-content page-start-content-01" id="pageStartContent1"></p>
+            <p class="page-start-content page-start-content-02" id="pageStartContent2"></p>
+            <!-- 选择角色信息 -->
+            <div class="page-start-info" id="pageStartInfo">
+                <div class="page-start-cell">
+                    <span class="start-cell-text fl">你的角色响亮的名字:</span>
+                    <input class="start-cell-input fl" value="" id="name" type="text" placeholder="(2-5个字)">
+                </div>
+                <div class="page-start-cell">
+                    <span class="start-cell-text fl">你的角色神奇的职业:</span>
+                    <input class="start-cell-input fl" value="" id="occupation" type="text" placeholder="(2-5个字)">
+                </div>
+                <div class="page-start-cell">
+                    <span class="start-cell-text fl">角色独一无二的性别:</span>
+                    <select class="start-cell-input fl" id="gender" value="无" name="无" id="3">
+                        <option value="0" style="display: none;" disabled selected>请选择</option>
+                        <option value="1">♂</option>
+                        <option value="2">♀</option>
+                    </select>
+                </div>
+                <button class="page-start-btn btn-confirm" id="pageStartBtn" onclick="play()">开启时光倒流之旅</button>
+            </div>
+        </div>
+    </section>
+    <!-- 第二屏；游戏开始 -->
+    <section class="play-page page-playing" id="pagePlaying">
+        <div class="play-page-content" id="playPageContent">
+            <h3 class="page-playing-title">时光倒流的开始</h3>
+        </div>
+    </section>
+    <!-- 第三屏；游戏结束，无论如何都不能改变现在滴~哈哈哈>
+        <section class="play-page page-end" id="page-end">
+        <p>不知过了多久，一阵闹钟声传来⏰，旺旺睁开眼睛，摸到枕边的手机，手机日历上显示2020年06月20号，旺旺好像做了一个梦，又什么都不记得了。旺旺翻身起床，又是新的劳碌工作的一天～
+           <br/>改变未来的机会稍纵即逝，无数个选择铸就了你现在的生活，重新来过的机会也未必一定会带来不同的人生。
+           <br/>不如把握当下，做好未来的每一个选择吧～
+        </p>
+        <button class="btn-confirm">重新来过</button>#444004
+    </section> -->
 </body>
+<script src="./index.js"></script>
 </html>

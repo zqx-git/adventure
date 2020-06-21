@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+function textModify()
+{
+    var obj = document.getElementById("p");
+    alert(obj.innerHTML);
+    obj.innerHTML= "google coding"; 
+}
+function textModify2()
+{
+    var obj = document.getElementById("p2");
+    alert(obj.innerText);
+    obj.innerText= "knowledge"; 
+}
+</script>
+</head>
+ 
+<body>
+<form>
+<input type="button" value="btn" onClick="textModify()">
+<input type="button" value="btn2" onClick="textModify2()">
+</form>
+<p id="p">life</p>
+<p id="p2">mastery of knowledge</p>
+</body>
+ 
+</html>
